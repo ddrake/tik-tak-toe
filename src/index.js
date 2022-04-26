@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 function Square(props) {
-    return (
-      <button
-        className={(props.isWin ? "win " : "") + "square"}
-        onClick={() => props.onClick()}
-      >
-        {props.value}
-      </button>
-    );
+  return (
+    <button
+      className={(props.isWin ? "win " : "") + "square"}
+      onClick={() => props.onClick()}
+    >
+      {props.value}
+    </button>
+  );
 }
 
 function Board(props) {
